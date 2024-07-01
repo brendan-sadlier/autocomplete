@@ -4,6 +4,7 @@ import Autocomplete from './components/Autocomplete';
 import { suggestionFormatter, handleSuggestionClick } from './utils';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import ArtistDetails from './components/details/ArtistDetails';
+import AlbumDetails from './components/details/AlbumDetails';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         break;
       case 'Album':
         console.log('Album: ' + suggestion.value);
+        navigate(`/album/${suggestion.value}`);
         break;
       case 'Song':
         console.log('Song: ' + suggestion.value);
@@ -70,6 +72,7 @@ function App() {
       <div className='details-page'>
         <Routes>
           <Route path='/artist/:name' Component={ArtistDetails} />
+          <Route path='/album/:title' Component={AlbumDetails} />
         </Routes>
       </div>
     </div>
