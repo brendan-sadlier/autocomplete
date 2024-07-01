@@ -1,0 +1,73 @@
+.details {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.details-header {
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.details-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+.album-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-detail h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.album-detail .content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.album-detail .info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.album-detail .tracks {
+  flex: 1;
+  max-width: 150px;
+}
+
+.album-detail .tracks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.album-detail .tracks ul li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .details {
+    max-width: 300px; /* Adjust max-width to 100% for mobile devices */
+  }
+}

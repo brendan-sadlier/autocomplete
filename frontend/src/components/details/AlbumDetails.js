@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+import './Details.css';
+
 const AlbumDetails = () => {
   const { title } = useParams();
   const [album, setAlbum] = useState(null);
