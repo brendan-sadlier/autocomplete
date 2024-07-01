@@ -1,7 +1,10 @@
 package com.autocomplete;
 
 import com.autocomplete.model.Album;
+import com.autocomplete.model.Song;
 import org.junit.jupiter.api.Test;
+
+import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
