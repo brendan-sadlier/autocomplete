@@ -5,6 +5,7 @@ import { suggestionFormatter, handleSuggestionClick } from './utils';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import ArtistDetails from './components/details/ArtistDetails';
 import AlbumDetails from './components/details/AlbumDetails';
+import SongDetails from './components/details/SongDetails';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         break;
       case 'Song':
         console.log('Song: ' + suggestion.value);
+        navigate(`/song/${suggestion.value}`);
         break;
       case 'Deezer':
         console.log('Deezer: ' + suggestion.value);
@@ -73,6 +75,8 @@ function App() {
         <Routes>
           <Route path='/artist/:name' Component={ArtistDetails} />
           <Route path='/album/:title' Component={AlbumDetails} />
+          <Route path='/song/:title' Component={SongDetails} />
+          <Route path='/*' element={<div>No details found</div>} />
         </Routes>
       </div>
     </div>
