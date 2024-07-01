@@ -1,6 +1,8 @@
 com\autocomplete\model\Song.class
+com\autocomplete\service\LocalSuggestionService.class
 com\autocomplete\config\WebConfig$1.class
 com\autocomplete\model\Album.class
+com\autocomplete\service\LocalSuggestionService$1.class
 com\autocomplete\AutocompleteApplication.class
 com\autocomplete\config\WebConfig.class
 com\autocomplete\model\Artist.class
