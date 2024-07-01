@@ -60,7 +60,30 @@ function App() {
           {theme === 'light' ? <Sun/> : <Moon/>}
         </button>
       </div>
-      <div>
+      <div className='search-type-container'>
+
+        <label className='radio-label'>
+          <input 
+            className='search-type-input'
+            type='radio'
+            value='local'
+            checked={searchType === 'local'}
+            onChange={handleSearchTypeChange}
+          />
+          Local File Search
+        </label>
+
+        <label className='radio-label'>
+          <input 
+            className='search-type-input'
+            type='radio'
+            value='external'
+            checked={searchType === 'external'}
+            onChange={handleSearchTypeChange}
+          />
+          Deezer Song Search
+        </label>
+
 
       </div>
       <Autocomplete 

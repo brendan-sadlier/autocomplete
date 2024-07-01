@@ -1,6 +1,13 @@
 import { AudioLines, Clock8Icon, DiscAlbum, Music, User, UserIcon } from "lucide-react";
 import "./App.css";
 
+function formatSeconds(seconds) {
+  let minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  const formattedSeconds = remainingSeconds < 10 ? `0${remainingSeconds}` : remainingSeconds;
+  return `${minutes}:${formattedSeconds}`;
+}
+
 const suggestionFormatter = (suggestion) => {
 
   const getIcon = (type) => {
@@ -42,7 +49,7 @@ const suggestionFormatter = (suggestion) => {
           <UserIcon className="artist-icon" />
           {suggestion.artist}
           <Clock8Icon className="song-time-icon" />
-          {suggestion.lengthOfSong}
+          {formatSeconds(suggestion.lengthOfSong)}
         </span>
       )}
     </>
