@@ -50,11 +50,11 @@ const SongDetails = () => {
         <p><strong>Length: </strong> {song.length}</p>
         <p>
           <strong>Artist: </strong> 
-          {song.artist}
+          <Link className="details-link" to={`/artist/${song.artist}`}>{song.artist}</Link>
         </p>
         <p>
           <strong>Album: </strong>
-          {song.album}
+          <Link className="details-link" to={`/album/${song.album}`}>{song.album}</Link>
         </p>
       </div>
     </div>

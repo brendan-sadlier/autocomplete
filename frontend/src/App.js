@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Autocomplete from './components/Autocomplete';
-import { suggestionFormatter, handleSuggestionClick } from './utils';
+import { suggestionFormatter } from './utils';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import ArtistDetails from './components/details/ArtistDetails';
 import AlbumDetails from './components/details/AlbumDetails';

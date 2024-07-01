@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const AlbumDetails = () => {
   const { title } = useParams();
@@ -46,7 +46,9 @@ const AlbumDetails = () => {
         <div className="info">
           <p>
             <strong>Artist: </strong>
-            {album.artist}
+            <Link className='details-link' to={`/artist/${album.artist}`}>
+              {album.artist}
+            </Link>
           </p>
           <p><strong>Description:</strong> {album.description}</p>
         </div>
@@ -58,7 +60,9 @@ const AlbumDetails = () => {
             <ul>
               {album.songs.map((song, index) => (
                 <li key={index}>
-                  {song.title}
+                  <Link className="details-link" to={`/song/${song.title}`}>
+                    {song.title}
+                  </Link>
                 </li>
               ))}
             </ul>
