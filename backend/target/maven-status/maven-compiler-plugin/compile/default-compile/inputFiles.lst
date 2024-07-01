@@ -1,3 +1,9 @@
 C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\AutocompleteApplication.java
+C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\controller\SuggestionController.java
+C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\model\Artist.java
+C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\service\LocalSuggestionService.java
+C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\service\DeezerSuggestionService.java
 C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\model\Song.java
 C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\model\Album.java
+C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\config\WebConfig.java
+C:\Users\BrendanXPS\Desktop\autocomplete\backend\src\main\java\com\autocomplete\model\Suggestion.java
