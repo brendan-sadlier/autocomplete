@@ -1,4 +1,6 @@
 com\autocomplete\model\Song.class
-com\autocomplete\model\Artist.class
 com\autocomplete\model\Album.class
 com\autocomplete\AutocompleteApplication.class
+com\autocomplete\model\Artist.class
+com\autocomplete\model\Suggestion.class
+com\autocomplete\model\Suggestion$Builder.class

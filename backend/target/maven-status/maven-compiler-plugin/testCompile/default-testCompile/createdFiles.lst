@@ -1,3 +1,4 @@
 com\autocomplete\ArtistTest.class
-com\autocomplete\AlbumTest.class
+com\autocomplete\SuggestionTest.class
 com\autocomplete\SongTest.class
+com\autocomplete\AlbumTest.class
