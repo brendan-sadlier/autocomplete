@@ -1,3 +1,25 @@
+:root {
+  --primary-color: #007bff;
+  --text-color-light: #000000;
+  --background-color-light: #ffffff;
+  --text-color-dark: #ffffff;
+  --background-color-dark: #121212;
+  --secondary-text-color-light: #4B5563;
+  --tertiary-text-color-light: #6B7280;
+  --secondary-text-color-dark: #9CA3AF;
+  --tertiary-text-color-dark: #D1D5DB;
+}
+
+body.light {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
 .App {
   font-family: "Open Sans", sans-serif;
 }
