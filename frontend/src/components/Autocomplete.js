@@ -72,7 +72,7 @@ const Autocomplete = ({ localSearchUrl, externalSearchUrl, onSuggestionClick, su
   }, [query, localSearchUrl, externalSearchUrl, searchType]);
 
   const handleSuggestionClick = (suggestion) => {
-    setQuery(suggestion);
+    setQuery("");
     onSuggestionClick(suggestion);
     setSearchPerformed(false);
     setLocalSuggestions([]);
