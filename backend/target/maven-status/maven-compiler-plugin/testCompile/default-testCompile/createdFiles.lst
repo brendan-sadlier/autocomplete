@@ -1,6 +1,7 @@
-com\autocomplete\ArtistTest.class
 com\autocomplete\SuggestionTest.class
-com\autocomplete\SongTest.class
 com\autocomplete\WebConfigTest.class
-com\autocomplete\LocalSuggestionServiceTest.class
 com\autocomplete\AlbumTest.class
+com\autocomplete\SuggestionControllerTest.class
+com\autocomplete\ArtistTest.class
+com\autocomplete\SongTest.class
+com\autocomplete\LocalSuggestionServiceTest.class
