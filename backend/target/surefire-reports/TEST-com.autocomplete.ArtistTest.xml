@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.autocomplete.SongTest" time="0" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.autocomplete.ArtistTest" time="0" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,12 +61,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testGetAlbum" classname="com.autocomplete.SongTest" time="0"/>
-  <testcase name="testGetTitle" classname="com.autocomplete.SongTest" time="0"/>
-  <testcase name="testSetArtist" classname="com.autocomplete.SongTest" time="0"/>
-  <testcase name="testGetArtist" classname="com.autocomplete.SongTest" time="0"/>
-  <testcase name="testSetLength" classname="com.autocomplete.SongTest" time="0"/>
-  <testcase name="testGetLength" classname="com.autocomplete.SongTest" time="0"/>
-  <testcase name="testSetAlbum" classname="com.autocomplete.SongTest" time="0"/>
-  <testcase name="testSetTitle" classname="com.autocomplete.SongTest" time="0"/>
+  <testcase name="testGetName" classname="com.autocomplete.ArtistTest" time="0"/>
+  <testcase name="testSetAlbums" classname="com.autocomplete.ArtistTest" time="0"/>
+  <testcase name="testGetAlbums" classname="com.autocomplete.ArtistTest" time="0"/>
+  <testcase name="testSetName" classname="com.autocomplete.ArtistTest" time="0"/>
 </testsuite>
