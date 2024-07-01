@@ -25,23 +25,4 @@ const suggestionFormatter = (suggestion) => {
   )
 };
 
-const handleSuggestionClick = (suggestion) => {
-  switch (suggestion.type) {
-    case 'Artist':
-      console.log('Artist: ' + suggestion.value);
-      break;
-    case 'Album':
-      console.log('Album: ' + suggestion.value);
-      break;
-    case 'Song':
-      console.log('Song: ' + suggestion.value);
-      break;
-    case 'Deezer':
-      console.log('Deezer: ' + suggestion.value);
-      break;
-    default:
-      break;
-  }
-}
-
-export { suggestionFormatter, handleSuggestionClick };
+export { suggestionFormatter };

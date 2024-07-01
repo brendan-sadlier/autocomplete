@@ -2,12 +2,16 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Autocomplete from './components/Autocomplete';
 import { suggestionFormatter, handleSuggestionClick } from './utils';
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import ArtistDetails from './components/details/ArtistDetails';
 
 function App() {
 
   const [theme, setTheme] = useState('light');
 
   const [searchType, setSearchType] = useState('local');
+
+  const navigate = useNavigate();
 
   const handleSearchTypeChange = (e) => {
     setSearchType(e.target.value);
@@ -21,6 +25,27 @@ function App() {
     localStorage.setItem('theme', theme);
     document.body.className = theme;
   }, [theme]);
+
+  const handleSuggestionClick = (suggestion) => {
+  
+    switch (suggestion.type) {
+      case 'Artist':
+        console.log('Artist: ' + suggestion.value);
+        navigate(`/artist/${suggestion.value}`);
+        break;
+      case 'Album':
+        console.log('Album: ' + suggestion.value);
+        break;
+      case 'Song':
+        console.log('Song: ' + suggestion.value);
+        break;
+      case 'Deezer':
+        console.log('Deezer: ' + suggestion.value);
+        break;
+      default:
+        break;
+    }
+  }
 
   return (
     <div className="App search-container">
@@ -41,6 +66,12 @@ function App() {
         suggestionFormatter={suggestionFormatter}
         onSuggestionClick={handleSuggestionClick}
       />
+
+      <div className='details-page'>
+        <Routes>
+          <Route path='/artist/:name' Component={ArtistDetails} />
+        </Routes>
+      </div>
     </div>
   );
 }
