@@ -1,0 +1,51 @@
+:root {
+  --autocomplete-bg-light: #ffffff;
+  --autocomplete-text-light: #000000;
+  --autocomplete-bg-dark: #333333;
+  --autocomplete-text-dark: #ffffff;
+  --input-bg-light: #ffffff;
+  --input-text-light: #000000;
+  --input-bg-dark: #444444;
+  --input-text-dark: #ffffff;
+}
+
+body.light .autocomplete {
+  background-color: var(--autocomplete-bg-light);
+  color: var(--autocomplete-text-light);
+}
+
+body.dark .autocomplete {
+  background-color: var(--autocomplete-bg-dark);
+  color: var(--autocomplete-text-dark);
+}
+
+.autocomplete {
+  position: relative; 
+  margin-top: 0;
+  margin-bottom: 0; 
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.autocomplete-input {
+  background-color: var(--input-bg-light);
+  color: var(--input-text-light);
+  box-sizing: border-box; 
+  padding: 0.75rem; 
+  border-radius: 0.5rem; 
+  border-width: 1.5px; 
+  width: 100%; 
+}
+
+body.dark .autocomplete-input {
+  background-color: var(--input-bg-dark);
+  color: var(--input-text-dark);
+}
+
+@media (max-width: 600px) {
+  .autocomplete {
+    max-width: 100%;
+    margin: 0 15px;
+  }
+}

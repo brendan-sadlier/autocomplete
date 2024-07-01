@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import SuggestionList from './SuggestionList'
 
+import "./Autocomplete.css"
+
 const Autocomplete = ({ localSearchUrl, externalSearchUrl, onSuggestionClick, suggestionFormatter, searchType, placeholder }) => {
 
   const [query, setQuery] = useState('')
