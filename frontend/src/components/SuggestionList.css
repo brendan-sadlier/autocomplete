@@ -1,0 +1,59 @@
+:root {
+  --suggestion-hover-bg-light: #f9f9f9;
+  --suggestion-hover-bg-dark: #262626;
+  --suggestion-border-color-light: #e0e0e0;
+  --suggestion-border-color-dark: #444444;
+  --suggestion-bg-dark: #333333;
+}
+
+body.light .suggestion-list {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark .suggestion-list {
+  background-color: var(--suggestion-bg-dark);
+  color: var(--text-color-dark);
+}
+
+.suggestion-list {
+  margin-top: 0;
+  overflow-y: auto; 
+  right: 0;
+  left: 0; 
+  top: 100%; 
+  max-height: 250px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.suggestion-item {
+  display: flex; 
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center; 
+  border-bottom-width: 1px; 
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+body.light .suggestion-item {
+  border-bottom-color: var(--suggestion-border-color-light);
+}
+
+body.dark .suggestion-item {
+  border-bottom-color: var(--suggestion-border-color-dark);
+}
+
+body.light .suggestion-item:hover {
+  background-color: var(--suggestion-hover-bg-light); 
+}
+
+body.dark .suggestion-item:hover {
+  background-color: var(--suggestion-hover-bg-dark); 
+}

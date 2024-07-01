@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import "./SuggestionList.css"
+
 const SuggestionList = ({ suggestions, onSuggestionClick, suggestionFormatter, searchPerformed }) => {
 
   if (searchPerformed && suggestions.length === 0) {
@@ -11,7 +13,7 @@ const SuggestionList = ({ suggestions, onSuggestionClick, suggestionFormatter, s
 
   return (
 
-    <ul>
+    <ul className='suggestion-list'>
       { suggestions.map((suggestions, index) => (
         <li
           key={index}
