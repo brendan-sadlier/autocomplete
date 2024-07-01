@@ -11,7 +11,6 @@ const Autocomplete = ({ localSearchUrl, externalSearchUrl, onSuggestionClick, su
   const [searchPerformed, setSearchPerformed] = useState(false)
 
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
 
   useEffect(() => {
 
@@ -21,7 +20,6 @@ const Autocomplete = ({ localSearchUrl, externalSearchUrl, onSuggestionClick, su
 
     if (query.length > 1) {
       setLoading(true);
-      setError(null);
       setSearchPerformed(true);
 
       if (searchType === "local") {
@@ -39,7 +37,6 @@ const Autocomplete = ({ localSearchUrl, externalSearchUrl, onSuggestionClick, su
           })
           .catch(err => {
             console.error("Error fetching suggestions:", err);
-            setError("Error fetching suggestions");
             setLoading(false);
           });
       } 
@@ -59,7 +56,6 @@ const Autocomplete = ({ localSearchUrl, externalSearchUrl, onSuggestionClick, su
           })
           .catch(err => {
             console.error("Error fetching external suggestions:", err);
-            setError("Error fetching external suggestions");
             setLoading(false);
           });
       }
@@ -69,7 +65,6 @@ const Autocomplete = ({ localSearchUrl, externalSearchUrl, onSuggestionClick, su
       setLocalSuggestions([]);
       setExternalSuggestions([]);
       setLoading(false);
-      setError(null);
     }
   }, [query, localSearchUrl, externalSearchUrl, searchType]);
 

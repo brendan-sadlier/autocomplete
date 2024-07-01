@@ -68,6 +68,6 @@
 
 @media (max-width: 600px) {
   .details {
-    max-width: 300px; /* Adjust max-width to 100% for mobile devices */
+    max-width: 300px;
   }
 }

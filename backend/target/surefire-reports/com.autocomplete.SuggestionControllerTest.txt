@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.autocomplete.SuggestionControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.703 s - in com.autocomplete.SuggestionControllerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.541 s - in com.autocomplete.SuggestionControllerTest
