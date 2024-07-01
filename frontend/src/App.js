@@ -46,6 +46,7 @@ function App() {
         break;
       case 'Deezer':
         console.log('Deezer: ' + suggestion.value);
+        window.open(suggestion.description, '_blank')
         break;
       default:
         break;
@@ -97,10 +98,11 @@ function App() {
 
       <div className='details-page'>
         <Routes>
+          <Route path='/' />
           <Route path='/artist/:name' Component={ArtistDetails} />
           <Route path='/album/:title' Component={AlbumDetails} />
           <Route path='/song/:title' Component={SongDetails} />
-          <Route path='/*' element={<div>No details found</div>} />
+          <Route path='/*' element={<div>404 Not Found</div>} />
         </Routes>
       </div>
     </div>
