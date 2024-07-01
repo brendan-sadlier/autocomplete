@@ -6,6 +6,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import ArtistDetails from './components/details/ArtistDetails';
 import AlbumDetails from './components/details/AlbumDetails';
 import SongDetails from './components/details/SongDetails';
+import { Moon, Sun } from 'lucide-react';
 
 function App() {
 
@@ -52,11 +53,11 @@ function App() {
   }
 
   return (
-    <div className="App search-container">
+    <div className={`${theme} App search-container`}>
       <div className='header'>
         <h1 className='page-title'>Music <span>Search</span></h1>
         <button className='theme-toggle-button' onClick={toggleTheme}>
-          {theme === 'light' ? '🌙' : '☀️'}
+          {theme === 'light' ? <Sun/> : <Moon/>}
         </button>
       </div>
       <div>
