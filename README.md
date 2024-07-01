@@ -3,7 +3,7 @@
 ## Overview
 This project was build as a showcase for the Autocomplete component. The component is a reusable component that can be used in any project that needs an autocomplete feature. The component is built using React and JavaScript.
 
-Watch It Live: [Project Demonstration]()
+Watch It Live: [Project Demonstration](./AutocompleteDemo.mp4)
 
 ## Features
 - The component is reusable and can be used in any project.
